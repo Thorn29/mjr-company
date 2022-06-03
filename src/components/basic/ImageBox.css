@@ -1,0 +1,110 @@
+@keyframes Globe_m {
+
+0% {
+  background-position: 0% 0%;
+}
+
+100% {
+  background-position: 100% 0%;
+}
+
+}
+
+.image-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0 7%;
+  margin: 1rem 0;
+}
+
+.image-box__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  box-sizing: border-box;
+}
+
+.image-box__title {
+  font-family: 'Font1';
+  font-size: 1rem;
+  color: var(--primary);
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.image-box__container > .text {
+  text-align: left;
+  max-width: 100%;
+}
+
+/*variants*/
+
+.image-box.top {
+  max-width: 360px;
+  margin: 0 1vw;
+}
+
+.image-box.top .image-box__container > .text {
+  text-align: center;
+  margin-top: 23px;
+  margin-bottom: 10px;
+}
+
+.image-box__globe {
+  width: 12.5rem;
+  height: 12.5rem;
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 50%;
+  margin: 30px auto;
+  background: url('../../images/basic/globe1.jpg');
+  background-size: cover;
+  background-position: left;
+  animation: Globe_m 15s linear infinite;
+  box-shadow: -40px -40px 55px rgba(0,0,0,.5) inset,
+              20px 20px 75px rgba(255,255,255,.2) inset,
+              -10px -10px 55px #000 inset,
+              -40px -40px 55px #000 inset,
+              -40px -40px 55px rgba(0,0,0,.8) inset;
+}
+
+@media (min-width: 650px) {
+
+  .image-box {
+    flex-direction: row;
+  }
+
+
+  .image-box__container {
+    width: 50%;
+    max-width: 450px;
+  }
+
+  /*variants*/
+
+  .image-box.top {
+    padding: 0 15px;
+    flex-direction: column;
+  }
+
+  .image-box.top .image-box__container {
+    width: 100%;
+    max-width: auto;
+    margin: 0;
+  }
+
+  .image-box.right {
+    flex-direction: row-reverse;
+  }
+
+  .image-box__globe {
+    margin: 30px;
+  }
+
+}

@@ -1,0 +1,38 @@
+.footer-menu {
+  width: 100%;
+  display: flex;
+}
+
+.footer-menu__cont {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.footer-menu__title {
+  font-family: 'Font3';
+  font-size: 1.2rem;
+  color: var(--primary);
+  text-transform: uppercase;
+}
+
+.footer-menu__link {
+  font-family: 'Font1';
+  font-size: 0.95rem;
+  color: white;
+  line-height: 1.5rem;
+  white-space: nowrap;
+}
+
+.footer-menu__link.active, .footer-menu__link:hover {
+  color: var(--primary);
+}
+
+@media (min-width: 1024px) {
+
+.footer-menu__list {
+  width: 33%;
+}
+
+}

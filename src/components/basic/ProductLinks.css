@@ -1,0 +1,28 @@
+.product-links-text {
+  display: block;
+  width: 90%;
+  background: var(--primary);
+  margin: 20px auto;
+  font-family: 'Font1';
+  color: black;
+  font-size: .9rem;
+  font-weight: bold;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 5px 1rem;
+}
+
+@media (min-width: 800px) {
+
+  .product-links-text {
+    width: 97%;
+  }
+
+  .product-links {
+    width: 98%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+  }
+
+}

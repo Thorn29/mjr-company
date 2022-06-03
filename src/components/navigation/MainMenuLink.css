@@ -1,0 +1,38 @@
+.main-menu-link {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  flex: 1;
+  border-right: 1px solid var(--background);
+  border-bottom: none;
+  background: var(--dark);
+  font-family: 'Font1';
+  font-size: 0.7rem;
+  color: white;
+}
+
+.main-menu-link.active, .main-menu-link:hover {
+  background: var(--metal);
+  color: black;
+  font-weight: bold;
+}
+
+@media (min-width: 650px) {
+
+.main-menu-link {
+  width: 5.6rem;
+  font-size: .7rem;
+}
+
+}
+
+@media (min-width: 1024px) {
+
+.main-menu-link {
+  width: 6.8rem;
+  font-size: .9rem;
+}
+
+}

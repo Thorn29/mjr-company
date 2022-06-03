@@ -1,0 +1,84 @@
+.lang-switch {
+  height: 1.5rem;
+  background: var(--glass);
+  float: right;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 1.5rem;
+  border: 1px solid var(--grey);
+  overflow: hidden;
+}
+
+.lang-switch__button {
+  display: block;
+  width: 3rem;
+  height: 100%;
+  background: transparent;
+  border: none;
+  font-family: 'Font3';
+  font-size: .6rem;
+  text-align: center;
+  line-height: 1.5rem;
+  color: var(--grey);
+  cursor: pointer;
+}
+
+.lang-switch__button.active, .lang-switch__button:hover {
+  color: var(--primary);
+}
+
+.lang-switch.foot {
+  float: none;
+  width: 9rem;
+  margin: 0 auto;
+}
+
+.lang-switch.foot .lang-switch__button.active, .lang-switch.foot .lang-switch__button:hover {
+  background: var(--glow);
+  color: black;
+  font-weight: bold;
+}
+
+@media (min-width: 650px) {
+
+  .lang-switch.head {
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    border: none;
+    background: none;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .lang-switch.head .lang-switch__button {
+    line-height: 1rem;
+    width: 2rem;
+    height: auto;
+  }
+
+  .lang-switch.foot {
+    width: 15rem;
+  }
+
+  .lang-switch.foot .lang-switch__button {
+    width: 5rem;
+    font-size: .7rem;
+  }
+
+}
+
+@media (min-width: 1024px) {
+
+.lang-switch.head {
+  width: 3rem;
+  margin-right: 4%;
+}
+
+.lang-switch.head .lang-switch__button {
+  font-size: .7rem;
+  line-height: 1.3rem;
+}
+
+}

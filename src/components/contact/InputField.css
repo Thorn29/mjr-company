@@ -1,0 +1,50 @@
+.input-field {
+  width: 90%;
+  position: relative;
+  margin: 15px 0;
+}
+
+.input-field__input {
+  display: block;
+  width: 100%;
+  min-width: 200px;
+  margin: 0 auto;
+  padding: 2px 5px;
+  border: none;
+  background: none;
+  font-family: 'Font1';
+  font-size: .9rem;
+  font-weight: normal;
+  color: white;
+  outline: none;
+  border-bottom: 1px solid var(--primary);
+  position: relative;
+  z-index: 1;
+}
+
+.input-field__label {
+  font-family: 'Font3';
+  color: var(--primary);
+  font-size: .8rem;
+  text-transform: capitalize;
+  position: absolute;
+  top: .2rem;
+  left: 2%;
+  transition: .3s;
+}
+
+
+.input-field:focus-within .input-field__label, .input-field__input:not(:placeholder-shown) + label {
+  top: -.7rem;
+  font-size: .6rem;
+}
+
+.input-field__error {
+  font-family: 'Font1';
+  font-size: .6rem;
+  color: red;
+  font-weight: bold;
+  position: absolute;
+  bottom: -1rem;
+  left: 2%;
+}

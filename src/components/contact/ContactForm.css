@@ -1,0 +1,33 @@
+.contact-form {
+  width: 90%;
+  margin: 10px auto;
+}
+
+.contact-form__address {
+  font-family: 'Font1';
+  color: rgba(255,255,255,.7);
+  font-size: .9rem;
+  font-style: italic;
+  text-align: center;
+}
+
+.contact-form__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form__submit {
+  width: 90%;
+  height: 2rem;
+  background: var(--glass);
+  margin: 10px 0;
+  font-family: 'Font3';
+  color: var(--primary);
+  border: 1px solid rgba(255,255,255,.3);
+  cursor: pointer;
+}
+
+.contact-form__submit:hover {
+  color: white;
+}

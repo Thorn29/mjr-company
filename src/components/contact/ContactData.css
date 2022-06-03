@@ -1,0 +1,39 @@
+.contact-data__section {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.contact-data__section > .text {
+  margin: 10px auto;
+}
+
+.contact-data__numbers {
+  font-family: 'Font3';
+  font-size: .8rem;
+  color: white;
+  text-align: center;
+}
+
+.contact-data__numbers strong {
+  color: var(--primary);
+  font-weight: normal;
+}
+
+@media (min-width: 800px) {
+
+  .contact-data {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-data__section {
+    margin: 0;
+  }
+
+  .contact-data__numbers {
+    font-size: .9rem;
+  }
+
+}
